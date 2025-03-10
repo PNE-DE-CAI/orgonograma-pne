@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organograma Completo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    h2 {
+      margin: 20px 0;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      padding: 20px;
+      gap: 10px;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none; /* Esconde a barra de rolagem */
+    }
+
+    .category {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+      width: 90%;
+      max-width: 1200px;
+    }
+
+    .category h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.5em;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #333;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: left;
+      min-width: 200px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      background-color: #444;
+    }
+
+    .item img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* Cores para cada categoria */
+    .cec .item {
+      background-color: #FF1493; /* Rosa forte */
+    }
+
+    .anos-iniciais .item {
+      background-color: #FF6F61; /* Coral */
+    }
+
+    .pec-qualificacao .item {
+      background-color: #FFA500; /* Laranja */
+    }
+
+    .pec-curriculo .item {
+      background-color: #4CAF50; /* Verde */
+    }
+
+    .pec-multiplica .item {
+      background-color: #1E90FF; /* Azul */
+    }
+
+    /* Caixa de descrição da categoria */
+    .category-description {
+      background-color: #333;
+      padding: 15px;
+      margin: 0 0 20px 0;
+      border-radius: 5px;
+      font-size: 0.9em;
+      color: #ccc;
+      width: 100%;
+    }
+
+    /* Estilo da caixa de informações */
+    .info-box {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      z-index: 1000;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+    }
+
+    .info-box p {
+      margin: 10px 0;
+    }
+
+    .info-box button {
+      background-color: #1E90FF;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .info-box button:hover {
+      background-color: #0077cc;
+    }
+
+    /* Overlay para fundo escurecido */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <h2>Organograma Completo</h2>
+
+  <!-- Categoria: CEC -->
+  <div class="category cec">
+    <h3>CEC</h3>
+    <div class="carousel">
+      <div class="item" data-name="Líder CEC" data-info="Informações sobre o Líder CEC.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Líder CEC</span>
+      </div>
+      <div class="item" data-name="Vice-Líder CEC" data-info="Informações sobre o Vice-Líder CEC.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Vice-Líder CEC</span>
+      </div>
+    </div>
+    <div class="category-description">
+      Esta categoria representa o topo do organograma, com foco na coordenação geral do projeto.
+    </div>
+  </div>
+
+  <!-- Categoria: Anos Iniciais -->
+  <div class="category anos-iniciais">
+    <h3>Anos Iniciais</h3>
+    <div class="carousel">
+      <div class="item" data-name="Nome 1" data-info="Informações sobre Nome 1.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 1</span>
+      </div>
+      <div class="item" data-name="Nome 2" data-info="Informações sobre Nome 2.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 2</span>
+      </div>
+    </div>
+    <div class="category-description">
+      Esta categoria representa os anos iniciais do projeto, com foco na base e fundamentos.
+    </div>
+  </div>
+
+  <!-- Categoria: PEC Qualificação -->
+  <div class="category pec-qualificacao">
+    <h3>PEC Qualificação</h3>
+    <div class="carousel">
+      <div class="item" data-name="Nome 3" data-info="Informações sobre Nome 3.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 3</span>
+      </div>
+      <div class="item" data-name="Nome 4" data-info="Informações sobre Nome 4.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 4</span>
+      </div>
+      <div class="item" data-name="Nome 5" data-info="Informações sobre Nome 5.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 5</span>
+      </div>
+      <div class="item" data-name="Nome 6" data-info="Informações sobre Nome 6.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 6</span>
+      </div>
+      <div class="item" data-name="Nome 7" data-info="Informações sobre Nome 7.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 7</span>
+      </div>
+    </div>
+    <div class="category-description">
+      Esta categoria é dedicada à qualificação dos participantes, com foco em habilidades específicas.
+    </div>
+  </div>
+
+  <!-- Categoria: PEC Currículo -->
+  <div class="category pec-curriculo">
+    <h3>PEC Currículo</h3>
+    <div class="carousel">
+      <div class="item" data-name="Nome 8" data-info="Informações sobre Nome 8.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 8</span>
+      </div>
+      <div class="item" data-name="Nome 9" data-info="Informações sobre Nome 9.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 9</span>
+      </div>
+      <div class="item" data-name="Nome 10" data-info="Informações sobre Nome 10.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 10</span>
+      </div>
+      <div class="item" data-name="Nome 11" data-info="Informações sobre Nome 11.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 11</span>
+      </div>
+      <div class="item" data-name="Nome 12" data-info="Informações sobre Nome 12.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 12</span>
+      </div>
+      <div class="item" data-name="Nome 13" data-info="Informações sobre Nome 13.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 13</span>
+      </div>
+      <div class="item" data-name="Nome 14" data-info="Informações sobre Nome 14.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 14</span>
+      </div>
+      <div class="item" data-name="Nome 15" data-info="Informações sobre Nome 15.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 15</span>
+      </div>
+      <div class="item" data-name="Nome 16" data-info="Informações sobre Nome 16.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 16</span>
+      </div>
+      <div class="item" data-name="Nome 17" data-info="Informações sobre Nome 17.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 17</span>
+      </div>
+      <div class="item" data-name="Nome 18" data-info="Informações sobre Nome 18.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 18</span>
+      </div>
+      <div class="item" data-name="Nome 19" data-info="Informações sobre Nome 19.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 19</span>
+      </div>
+      <div class="item" data-name="Nome 20" data-info="Informações sobre Nome 20.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 20</span>
+      </div>
+      <div class="item" data-name="Nome 21" data-info="Informações sobre Nome 21.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 21</span>
+      </div>
+    </div>
+    <div class="category-description">
+      Esta categoria abrange o currículo principal, com foco em conteúdos e práticas essenciais.
+    </div>
+  </div>
+
+  <!-- Categoria: PEC Multiplica -->
+  <div class="category pec-multiplica">
+    <h3>PEC Multiplica</h3>
+    <div class="carousel">
+      <div class="item" data-name="Nome 22" data-info="Informações sobre Nome 22.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 22</span>
+      </div>
+      <div class="item" data-name="Nome 23" data-info="Informações sobre Nome 23.">
+        <img src="https://via.placeholder.com/50" alt="Foto">
+        <span>Nome 23</span>
+      </div>
+    </div>
+    <div class="category-description">
+      Esta categoria é voltada para a multiplicação de conhecimentos e expansão do projeto.
+    </div>
+  </div>
+
+  <!-- Caixa de informações -->
+  <div class="overlay"></div>
+  <div class="info-box">
+    <h3 id="info-name"></h3>
+    <p id="info-details"></p>
+    <button onclick="closeInfoBox()">Fechar</button>
+  </div>
+
+  <script>
+    // Função para exibir a caixa de informações
+    function showInfoBox(name, info) {
+      document.getElementById("info-name").textContent = name;
+      document.getElementById("info-details").textContent = info;
+      document.querySelector(".info-box").style.display = "block";
+      document.querySelector(".overlay").style.display = "block";
+    }
+
+    // Função para fechar a caixa de informações
+    function closeInfoBox() {
+      document.querySelector(".info-box").style.display = "none";
+      document.querySelector(".overlay").style.display = "none";
+    }
+
+    // Adiciona interação ao clicar em um item
+    const items = document.querySelectorAll(".item");
+    items.forEach(item => {
+      item.addEventListener("click", () => {
+        const name = item.getAttribute("data-name");
+        const info = item.getAttribute("data-info");
+        showInfoBox(name, info);
+      });
+    });
+  </script>
+</body>
+</html>
+
