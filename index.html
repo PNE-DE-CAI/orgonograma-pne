@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NPE-CAIEIRAS 2025</title>
+  <title>NPE-CAIEIRAS 2025 - Layout Colmeia</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -23,74 +22,74 @@
       margin: 20px 0;
     }
 
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      padding: 20px;
-      gap: 10px;
-    }
-
-    .carousel::-webkit-scrollbar {
-      display: none; /* Esconde a barra de rolagem */
-    }
-
     .category {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
       width: 90%;
       max-width: 1200px;
     }
 
     .category h3 {
-      margin: 0 0 10px 0;
+      margin: 0 0 20px 0;
       font-size: 1.5em;
     }
 
-    .item {
-      display: flex;
-      align-items: center;
+    .hex-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 10px;
+      justify-content: center;
+    }
+
+    .hex-item {
+      position: relative;
+      width: 150px;
+      height: 173px;
       background-color: #333;
-      padding: 10px;
-      border-radius: 5px;
-      text-align: left;
-      min-width: 200px;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
       cursor: pointer;
       transition: transform 0.2s, background-color 0.2s;
     }
 
-    .item:hover {
-      transform: scale(1.05);
+    .hex-item:hover {
+      transform: scale(1.1);
       background-color: #444;
     }
 
-    .item img {
+    .hex-item img {
       width: 50px;
       height: 50px;
       border-radius: 50%;
       object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .hex-item span {
+      font-size: 0.9em;
     }
 
     /* Cores para cada categoria */
-    .cec .item {
+    .cec .hex-item {
       background-color: #FF1493; /* Rosa forte */
     }
 
-    .anos-iniciais .item {
+    .anos-iniciais .hex-item {
       background-color: #FF6F61; /* Coral */
     }
 
-    .pec-qualificacao .item {
+    .pec-qualificacao .hex-item {
       background-color: #FFA500; /* Laranja */
     }
 
-    .pec-curriculo .item {
+    .pec-curriculo .hex-item {
       background-color: #4CAF50; /* Verde */
     }
 
-    .pec-multiplica .item {
+    .pec-multiplica .hex-item {
       background-color: #1E90FF; /* Azul */
     }
 
@@ -98,7 +97,7 @@
     .category-description {
       background-color: #333;
       padding: 15px;
-      margin: 0 0 20px 0;
+      margin: 20px 0;
       border-radius: 5px;
       font-size: 0.9em;
       color: #ccc;
@@ -161,70 +160,62 @@
   <!-- Categoria: CEC -->
   <div class="category cec">
     <h3>DESENHO DO NPE - 2025</h3>
-    <div class="carousel">
-      	  <div class="item" data-name="SUELY DE SOUSA REGO" data-info="A dirigente regional de ensino é responsável pela administração e supervisão das atividades educacionais na região de Caieiras. Ela coordena escolas, implementa políticas educacionais, apoia diretores e professores, e garante o cumprimento das normas do sistema educacional.   ">
-        
-		<img src="https://i.ibb.co/Z1fHwc3K/455963687-951945630028630-8550926775717874403-n.jpg" alt="455963687-951945630028630-8550926775717874403-n" border="0"></a>
-        		<span>DIRIGENTE REGIONAL DE ENSINO</span>
-	      </div>
-	  
-      <div class="item" data-name="KATIA REGINA PESSOA" data-info="A CEC é responsável por liderar, planejar, coordenar e monitorar as ações pedagógicas do Núcleo Pedagógico, visando a melhoria da qualidade do ensino e o alcance das metas educacionais estabelecidas pela SEDUC. ">
-        <img src="https://i.ibb.co/Dg6jL0dm/kaa.jpg" alt="kaa" border="0"></a>
+    <div class="hex-grid">
+      <div class="hex-item" data-name="SUELY DE SOUSA REGO" data-info="A dirigente regional de ensino é responsável pela administração e supervisão das atividades educacionais na região de Caieiras. Ela coordena escolas, implementa políticas educacionais, apoia diretores e professores, e garante o cumprimento das normas do sistema educacional.">
+        <img src="https://i.ibb.co/Z1fHwc3K/455963687-951945630028630-8550926775717874403-n.jpg" alt="DIRIGENTE">
+        <span>DIRIGENTE REGIONAL DE ENSINO</span>
+      </div>
+      <div class="hex-item" data-name="KATIA REGINA PESSOA" data-info="A CEC é responsável por liderar, planejar, coordenar e monitorar as ações pedagógicas do Núcleo Pedagógico, visando a melhoria da qualidade do ensino e o alcance das metas educacionais estabelecidas pela SEDUC.">
+        <img src="https://i.ibb.co/Dg6jL0dm/kaa.jpg" alt="CEC">
         <span>CEC</span>
       </div>
     </div>
     <div class="category-description">
-      <i>Em resumo, o Dirigente Regional tem um papel mais administrativo e estratégico, enquanto o CEC tem um papel mais pedagógico e de suporte às escolas. Ambos trabalham em conjunto para garantir o bom funcionamento do sistema educacional na região.<i\>
+      <i>Em resumo, o Dirigente Regional tem um papel mais administrativo e estratégico, enquanto o CEC tem um papel mais pedagógico e de suporte às escolas. Ambos trabalham em conjunto para garantir o bom funcionamento do sistema educacional na região.<i>
     </div>
   </div>
 
   <!-- Categoria: Anos Iniciais -->
   <div class="category anos-iniciais">
     <h3>PEC - AI</h3>
-    <div class="carousel">
-      <div class="item" data-name="CASSIA FERRANDO" data-info="A Professora Especialista em Currículo dos Anos Iniciais, no contexto da Secretaria de Educação do Estado de São Paulo (SEDUC-SP), desempenha um papel crucial no suporte pedagógico às escolas que atendem essa etapa da educação básica. Suas funções são voltadas para garantir a qualidade do ensino e a implementação efetiva do currículo.">
-        <img src="https://i.ibb.co/hxVLTfGm/CASSIA.jpg" alt="CASSIA" border="0">
+    <div class="hex-grid">
+      <div class="hex-item" data-name="CASSIA FERRANDO" data-info="A Professora Especialista em Currículo dos Anos Iniciais, no contexto da Secretaria de Educação do Estado de São Paulo (SEDUC-SP), desempenha um papel crucial no suporte pedagógico às escolas que atendem essa etapa da educação básica. Suas funções são voltadas para garantir a qualidade do ensino e a implementação efetiva do currículo.">
+        <img src="https://i.ibb.co/hxVLTfGm/CASSIA.jpg" alt="CASSIA">
         <span>PEC Anos Iniciais</span>
       </div>
-      <div class="item" data-name="JOELIA" data-info="A Professora Especialista em Currículo dos Anos Iniciais, no contexto da Secretaria de Educação do Estado de São Paulo (SEDUC-SP), desempenha um papel crucial no suporte pedagógico às escolas que atendem essa etapa da educação básica. Suas funções são voltadas para garantir a qualidade do ensino e a implementação efetiva do currículo.">
-        <img src="https://i.ibb.co/Jj2sQG18/JOELIA.jpg" alt="JOELIA" border="0">
+      <div class="hex-item" data-name="JOELIA" data-info="A Professora Especialista em Currículo dos Anos Iniciais, no contexto da Secretaria de Educação do Estado de São Paulo (SEDUC-SP), desempenha um papel crucial no suporte pedagógico às escolas que atendem essa etapa da educação básica. Suas funções são voltadas para garantir a qualidade do ensino e a implementação efetiva do currículo.">
+        <img src="https://i.ibb.co/Jj2sQG18/JOELIA.jpg" alt="JOELIA">
         <span>PEC Anos Iniciais</span>
       </div>
     </div>
     <div class="category-description">
-       O Professor PEC dos Anos Iniciais é um profissional que atua no Núcleo Pedagógico das Diretorias de Ensino, com foco no apoio pedagógico, na formação continuada e no acompanhamento das escolas que atendem essa etapa da educação básica. Seu trabalho é fundamental para garantir que as crianças tenham acesso a um ensino de qualidade e que desenvolvam as habilidades e competências necessárias para o seu sucesso escolar e pessoal.
+      O Professor PEC dos Anos Iniciais é um profissional que atua no Núcleo Pedagógico das Diretorias de Ensino, com foco no apoio pedagógico, na formação continuada e no acompanhamento das escolas que atendem essa etapa da educação básica. Seu trabalho é fundamental para garantir que as crianças tenham acesso a um ensino de qualidade e que desenvolvam as habilidades e competências necessárias para o seu sucesso escolar e pessoal.
     </div>
   </div>
 
-
-
-
-
-
-
   <!-- Categoria: PEC Qualificação -->
   <div class="category pec-qualificacao">
-    <h3>PEC Qualidade da aula </h3>
-    <div class="carousel">
-      <div class="item" data-name="JANETE" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
-        <img src="https://i.ibb.co/prPvT6QQ/JANETE.jpg" alt="JANETE" border="0">
-        <span>PEC Qualidade da aula - Lingua portuguesa</span>
+    <h3>PEC Qualidade da aula</h3>
+    <div class="hex-grid">
+      <div class="hex-item" data-name="JANETE" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
+        <img src="https://i.ibb.co/prPvT6QQ/JANETE.jpg" alt="JANETE">
+        <span>PEC Qualidade da aula - Língua Portuguesa</span>
       </div>
-      <div class="item" data-name="LUCIANA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
-        <img src="https://i.ibb.co/hxj3qfK8/AMABILE.jpg" alt="AMABILE" border="0">
-        <span>PEC Qualidade da aula - Lingua portuguesa </span>
+      <div class="hex-item" data-name="LUCIANA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
+        <img src="https://i.ibb.co/hxj3qfK8/AMABILE.jpg" alt="AMABILE">
+        <span>PEC Qualidade da aula - Língua Portuguesa</span>
       </div>
-      <div class="item" data-name="ANA SAN´TANA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
-       <img src="https://i.ibb.co/wZp7z6y7/ANA.jpg" alt="ANA" border="0">
-        <span>PEC Qualidade da aula - Lingua portuguesa</span>
+      <div class="hex-item" data-name="ANA SAN´TANA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
+        <img src="https://i.ibb.co/wZp7z6y7/ANA.jpg" alt="ANA">
+        <span>PEC Qualidade da aula - Língua Portuguesa</span>
       </div>
-      <div class="item" data-name="REBECA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
-        <img src="https://i.ibb.co/ynQw543Q/REBECA.jpg" alt="REBECA" border="0">
-        <span>PEC Qualidade da aula - Lingua portuguesa</span>
+      <div class="hex-item" data-name="REBECA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
+        <img src="https://i.ibb.co/ynQw543Q/REBECA.jpg" alt="REBECA">
+        <span>PEC Qualidade da aula - Língua Portuguesa</span>
       </div>
-      <div class="item" data-name="AMABILE" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
+      <div class="hex-item" data-name="AMABILE" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://via.placeholder.com/50" alt="Foto">
-        <span>PEC Qualidade da aula - Lingua portuguesa</span>
+        <span>PEC Qualidade da aula - Língua Portuguesa</span>
       </div>
     </div>
     <div class="category-description">
@@ -232,81 +223,81 @@
     </div>
   </div>
 
-  <!-- Categoria: PEC de Desenvolvimento Currícular -->
+  <!-- Categoria: PEC Desenvolvimento Curricular -->
   <div class="category pec-curriculo">
-    <h3>PEC Desenvolvimento Currícular</h3>
-    <div class="carousel">
-      <div class="item" data-name="Nome 8" data-info="Informações sobre Nome 8.">
+    <h3>PEC Desenvolvimento Curricular</h3>
+    <div class="hex-grid">
+      <div class="hex-item" data-name="Nome 8" data-info="Informações sobre Nome 8.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 8</span>
       </div>
-      <div class="item" data-name="Nome 9" data-info="Informações sobre Nome 9.">
+      <div class="hex-item" data-name="Nome 9" data-info="Informações sobre Nome 9.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 9</span>
       </div>
-      <div class="item" data-name="Nome 10" data-info="Informações sobre Nome 10.">
+      <div class="hex-item" data-name="Nome 10" data-info="Informações sobre Nome 10.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 10</span>
       </div>
-      <div class="item" data-name="Nome 11" data-info="Informações sobre Nome 11.">
+      <div class="hex-item" data-name="Nome 11" data-info="Informações sobre Nome 11.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 11</span>
       </div>
-      <div class="item" data-name="Nome 12" data-info="Informações sobre Nome 12.">
+      <div class="hex-item" data-name="Nome 12" data-info="Informações sobre Nome 12.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 12</span>
       </div>
-      <div class="item" data-name="Nome 13" data-info="Informações sobre Nome 13.">
+      <div class="hex-item" data-name="Nome 13" data-info="Informações sobre Nome 13.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 13</span>
       </div>
-      <div class="item" data-name="Nome 14" data-info="Informações sobre Nome 14.">
+      <div class="hex-item" data-name="Nome 14" data-info="Informações sobre Nome 14.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 14</span>
       </div>
-      <div class="item" data-name="Nome 15" data-info="Informações sobre Nome 15.">
+      <div class="hex-item" data-name="Nome 15" data-info="Informações sobre Nome 15.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 15</span>
       </div>
-      <div class="item" data-name="Nome 16" data-info="Informações sobre Nome 16.">
+      <div class="hex-item" data-name="Nome 16" data-info="Informações sobre Nome 16.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 16</span>
       </div>
-      <div class="item" data-name="Nome 17" data-info="Informações sobre Nome 17.">
+      <div class="hex-item" data-name="Nome 17" data-info="Informações sobre Nome 17.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 17</span>
       </div>
-      <div class="item" data-name="Nome 18" data-info="Informações sobre Nome 18.">
+      <div class="hex-item" data-name="Nome 18" data-info="Informações sobre Nome 18.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 18</span>
       </div>
-      <div class="item" data-name="Nome 19" data-info="Informações sobre Nome 19.">
+      <div class="hex-item" data-name="Nome 19" data-info="Informações sobre Nome 19.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 19</span>
       </div>
-      <div class="item" data-name="Nome 20" data-info="Informações sobre Nome 20.">
+      <div class="hex-item" data-name="Nome 20" data-info="Informações sobre Nome 20.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 20</span>
       </div>
-      <div class="item" data-name="Nome 21" data-info="Informações sobre Nome 21.">
+      <div class="hex-item" data-name="Nome 21" data-info="Informações sobre Nome 21.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 21</span>
       </div>
     </div>
     <div class="category-description">
-        O PEC Desenvolvimento Curricular é fundamental para manter o currículo atualizado, relevante e alinhado às necessidades dos estudantes, contribuindo para a melhoria da qualidade da educação e o cumprimento das metas educacionais.
+      O PEC Desenvolvimento Curricular é fundamental para manter o currículo atualizado, relevante e alinhado às necessidades dos estudantes, contribuindo para a melhoria da qualidade da educação e o cumprimento das metas educacionais.
     </div>
   </div>
 
   <!-- Categoria: PEC Multiplica -->
   <div class="category pec-multiplica">
     <h3>PEC Multiplica</h3>
-    <div class="carousel">
-      <div class="item" data-name="Nome 22" data-info="Informações sobre Nome 22.">
+    <div class="hex-grid">
+      <div class="hex-item" data-name="Nome 22" data-info="Informações sobre Nome 22.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 22</span>
       </div>
-      <div class="item" data-name="Nome 23" data-info="Informações sobre Nome 23.">
+      <div class="hex-item" data-name="Nome 23" data-info="Informações sobre Nome 23.">
         <img src="https://via.placeholder.com/50" alt="Foto">
         <span>Nome 23</span>
       </div>
@@ -340,7 +331,7 @@
     }
 
     // Adiciona interação ao clicar em um item
-    const items = document.querySelectorAll(".item");
+    const items = document.querySelectorAll(".hex-item");
     items.forEach(item => {
       item.addEventListener("click", () => {
         const name = item.getAttribute("data-name");
