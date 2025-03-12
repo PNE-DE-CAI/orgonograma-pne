@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Itens em Colmeia</title>
+  <title>Lista</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,14 +26,14 @@
     .hex-grid {
       display: grid;
       grid-template-columns: repeat(3, 100px); /* 3 colunas de hexágonos */
-      gap: 10px;
+      gap: 30px;
       justify-content: center;
     }
 
     .hex-item {
-      width: 100px;
-      height: 115px;
-      background-color: #1E90FF;
+      width: 120px;
+      height: 120px;
+      background-color: green;
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       display: flex;
       align-items: center;
@@ -43,6 +43,7 @@
       font-size: 1em;
       transition: transform 0.2s, background-color 0.2s;
     }
+
 
     .hex-item:hover {
       transform: scale(1.1);
@@ -67,16 +68,14 @@
   </style>
 </head>
 <body>
-  <h2>Lista de Itens em Colmeia</h2>
+  <h2></h2>
 
   <!-- Grid de Hexágonos -->
   <div class="hex-grid">
-    <div class="hex-item">Item 1</div>
-    <div class="hex-item">Item 2</div>
+    <div class="hex-item">ALFABETIZA JUNTOS</div>
+    <div class="hex-item">PROJETO TUTOR ANOS INICIAIS</div>
     <div class="hex-item">Item 3</div>
-    <div class="hex-item">Item 4</div>
-    <div class="hex-item">Item 5</div>
-    <div class="hex-item">Item 6</div>
+   
   </div>
 
   <!-- Botão de Voltar -->
