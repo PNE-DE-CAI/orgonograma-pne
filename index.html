@@ -42,8 +42,8 @@
 
     .hex-item {
       position: relative;
-      width: 140px;
-      height: 153px;
+      width: 150px;
+      height: 163px;
       background-color: #333;
       clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       display: flex;
@@ -56,7 +56,7 @@
     }
 
     .hex-item:hover {
-      transform: scale(1.1);
+      transform: scale(1.3);
       background-color: #444;
     }
 
@@ -69,7 +69,7 @@
     }
 
     .hex-item span {
-      font-size: 0.9em;
+      font-size: 1.0em;
     }
 
     /* Cores para cada categoria */
@@ -152,6 +152,14 @@
       background-color: rgba(0, 0, 0, 0.7);
       z-index: 999;
     }
+	  /* Estilo do link PASTAS */
+    .link-pastas {
+      display: inline-block;
+      margin-left: -120px;
+      color: #fff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -164,20 +172,22 @@
 <div class="hex-item" data-name="SUELI DE SOUSA REGO" data-info="A dirigente regional de ensino é responsável pela administração e supervisão das atividades educacionais na região de Caieiras. Ela coordena escolas, implementa políticas educacionais, apoia diretores e professores, e garante o cumprimento das normas do sistema educacional.">
         <img src="https://i.ibb.co/Z1fHwc3K/455963687-951945630028630-8550926775717874403-n.jpg" alt="DIRIGENTE"border="1">
         <span>DIRIGENTE REGIONAL DE ENSINO</span>
+	
       </div> 
- 
- <div class="hex-item" data-name="MARIA ISABEL" data-info="A dirigente regional de ensino é responsável pela administração e supervisão das atividades educacionais na região de Caieiras. Ela coordena escolas, implementa políticas educacionais, apoia diretores e professores, e garante o cumprimento das normas do sistema educacional.">
+<a href="#" class="link-pastas">PASTAS</a> 
+ <div class="hex-item" data-name="MARIA ISABEL" data-info="A Supervisora de Núcleo Pedagógico desempenha um papel fundamental na garantia da qualidade do ensino e no acompanhamento do progresso dos estudantes.">
         <img src="https://i.ibb.co/8g9thw3N/ISABELL.jpg" alt="ISABELL" border="1">
         <span>SUPERVISORA DO NÚCLEO PEDAGÓGICO </span>
       </div>	  
-
-<div class="hex-item" data-name="KATIA REGINA PESSOA" data-info="A CEC é responsável por liderar, planejar, coordenar e monitorar as ações pedagógicas do Núcleo Pedagógico, visando a melhoria da qualidade do ensino e o alcance das metas educacionais estabelecidas pela SEDUC.">
+<a href="#" class="link-pastas">PASTAS</a>
+<div class="hex-item" data-name="KATIA REGINA PESSOA" data-info="A Coordenadora especialista no curriculo é responsável por liderar, planejar, coordenar e monitorar as ações pedagógicas do Núcleo Pedagógico, visando a melhoria da qualidade do ensino e o alcance das metas educacionais estabelecidas pela SEDUC.">
         <img src="https://i.ibb.co/Dg6jL0dm/kaa.jpg" alt="CEC"border="1">
-        <span>CEC</span>
+        <span>COORDENADORA ESPECIALISTA NO CURRICULO</span>
       </div>
+<a href="#" class="link-pastas">PASTAS</a>	  
 	</div>
     <div class="category-description">
-      Em resumo, o Dirigente Regional tem um papel mais administrativo e estratégico, enquanto o CEC tem um papel mais pedagógico e de suporte às escolas. 
+      Em resumo, o Dirigente Regional tem um papel mais administrativo e estratégico, o Supervisor de Núcleo Pedagógico em suas funções de monitoramento, avaliação e suporte pedagógico, contribuindo para a melhoria da qualidade do ensino e o sucesso dos estudantes; enquanto a Coordenadora especialista no curriculo tem um papel mais pedagógico e de suporte às escolas em conjuto com os PECs. 
 	  Ambos trabalham em conjunto para garantir o bom funcionamento do sistema educacional na região.
     </div>
   </div>
@@ -188,11 +198,11 @@
     <div class="hex-grid">
       <div class="hex-item" data-name="CASSIA FERRANDO" data-info="A Professora Especialista em Currículo dos Anos Iniciais, no contexto da Secretaria de Educação do Estado de São Paulo (SEDUC-SP), desempenha um papel crucial no suporte pedagógico às escolas que atendem essa etapa da educação básica. Suas funções são voltadas para garantir a qualidade do ensino e a implementação efetiva do currículo.">
         <img src="https://i.ibb.co/hxVLTfGm/CASSIA.jpg" alt="CASSIA">
-        <span>PEC Anos Iniciais</span>
+        <span>Anos Iniciais Pedagóga</span>
       </div>
       <div class="hex-item" data-name="JOELIA" data-info="A Professora Especialista em Currículo dos Anos Iniciais, no contexto da Secretaria de Educação do Estado de São Paulo (SEDUC-SP), desempenha um papel crucial no suporte pedagógico às escolas que atendem essa etapa da educação básica. Suas funções são voltadas para garantir a qualidade do ensino e a implementação efetiva do currículo.">
         <img src="https://i.ibb.co/Jj2sQG18/JOELIA.jpg" alt="JOELIA">
-        <span>PEC Anos Iniciais</span>
+        <span>Anos Iniciais Pedagóga</span>
       </div>
     </div>
     <div class="category-description">
@@ -206,32 +216,35 @@
     <div class="hex-grid">
       <div class="hex-item" data-name="JANETE" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://i.ibb.co/prPvT6QQ/JANETE.jpg" alt="JANETE">
-        <span>PEC Qualidade da aula - Língua Portuguesa</span>
+        <span>Qualidade da aula  Língua Portuguesa</span>
       </div>
       <div class="hex-item" data-name="LUCIANA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://i.ibb.co/hxj3qfK8/AMABILE.jpg" alt="AMABILE">
-        <span>PEC Qualidade da aula - Língua Portuguesa</span>
+        <span>Qualidade da aula  Língua Portuguesa</span>
       </div>
       <div class="hex-item" data-name="ANA SANT´ANA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://i.ibb.co/wZp7z6y7/ANA.jpg" alt="ANA">
-        <span>PEC Qualidade da aula - Língua Portuguesa</span>
+        <span>Qualidade da aula  Língua Portuguesa</span>
       </div>
       <div class="hex-item" data-name="REBECA" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://i.ibb.co/ynQw543Q/REBECA.jpg" alt="REBECA">
-        <span>PEC Qualidade da aula - Língua Portuguesa</span>
+        <span>Qualidade da aula  Língua Portuguesa</span>
       </div>
       <div class="hex-item" data-name="AMABILE" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://via.placeholder.com/50" alt="Foto">
-        <span>PEC Qualidade da aula - Língua Portuguesa</span>
+        <span>Qualidade da aula  Língua Portuguesa</span>
       </div>
 	   <div class="hex-item" data-name="Alexsandro Marsal Paes" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://i.ibb.co/wNJ0XY2D/alex.jpg" alt="alex" border="0">
-        <span>PEC Qualidade da aula - Arte</span>
+        <span>Qualidade da aula  Arte</span>
       </div>
 	   <div class="hex-item" data-name="Ana Paula Moura da Rocha Dias" data-info="PEC é um profissional multifacetado que desempenha um papel crucial na melhoria contínua da qualidade das aulas, oferecendo suporte, formação e orientação para professores e coordenadores, e acompanhando de perto o desempenho das escolas para garantir um ensino de excelência para todos os alunos.">
         <img src="https://i.ibb.co/ym5kj3Zq/ana.jpg" alt="ana" border="0">
-        <span>PEC Qualidade da aula - Fisíca</span>
+        <span>Qualidade da aula Fisíca</span>
       </div>
+	  
+	  
+	  
     </div>
 	
 	
@@ -260,77 +273,92 @@
     <div class="hex-grid">
       <div class="hex-item" data-name="Adalberto Alves de Oliveira	
 
-" data-info="Informações sobre Nome 8.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
         <img src="https://i.ibb.co/LXWQnSyf/adalberto.jpg" alt="adalberto" border="0">
-        <span>PEC Desenvolvimento Curricular-Educação Física</span>
+        <span>Desenvolvimento Curricular Educação Física</span>
       </div>
       <div class="hex-item" data-name="Marcos Paulo 
 	
-" data-info="Informações sobre Nome 9.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
        <img src="https://i.ibb.co/KzQHMNX6/marcos.jpg" alt="marcos" border="0">
-        <span>PEC Desenvolvimento Curricular–História</span>
+        <span>Desenvolvimento Curricular História</span>
       </div>
       <div class="hex-item" data-name="Meire Leão 
-" data-info="Informações sobre Nome 10.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
         <img src="https://i.ibb.co/F4tv2Nkt/meire.jpg" alt="meire" border="0">
-        <span>PEC Desenvolvimento Curricular–Inglês</span>
+        <span>Desenvolvimento Curricular Inglês</span>
       </div>
       <div class="hex-item" data-name="	
 Renata Martins Correia
 
-" data-info="Informações sobre Nome 11.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
        <img src="https://i.ibb.co/Z6hQFmmt/renatinha.jpg" alt="renatinha" border="0">
-        <span>PEC Desenvolvimento Curricular-Matemática</span>
+        <span>Desenvolvimento Curricular Matemática</span>
       </div>
       <div class="hex-item" data-name="Denise Ferreira Barboza 	
-" data-info="Informações sobre Nome 12.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
        <img src="https://i.ibb.co/DPKBJfDC/denise.jpg" alt="denise" border="0">
-        <span>PEC Desenvolvimento Curricular-Ciências Biológicas</span>
+        <span>Desenvolvimento Curricular Ciências Biológicas</span>
       </div>
       <div class="hex-item" data-name="Helena Aparecida de Doná
 
 " data-info="Informações sobre Nome 13.">
        <img src="https://i.ibb.co/F44HrZ1q/helena.jpg" alt="helena" border="0">
-        <span>PEC Desenvolvimento Curricular-Ciências Biológicas</span>
+        <span>Desenvolvimento Curricular Ciências Biológicas</span>
       </div>
       <div class="hex-item" data-name="Isabel Cristina de Sousa da Silva	
 
-" data-info="Informações sobre Nome 14.">
-        <img src="https://via.placeholder.com/50" alt="Foto">
-        <span>PEC Desenvolvimento Curricular-Língua Portuguesa</span>
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
+        <img src="https://i.ibb.co/R4T8ypCw/isasabel.jpg" alt="isasabel" border="0">
+        <span>Desenvolvimento Curricular Língua Portuguesa</span>
       </div>
       <div class="hex-item" data-name="Karen Priscila Oyama
-" data-info="Informações sobre Nome 15.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
        <img src="https://i.ibb.co/ns6GwDQb/karen.jpg" alt="karen" border="0">
-        <span>PEC Desenvolvimento Curricular-Educação Física(Conviva)</span>
+        <span>Desenvolvimento Curricular Educação Física</span>
       </div>
       <div class="hex-item" data-name="Valdomiro Pereira de Souza Carvalho – Matemática
-" data-info="Informações sobre Nome 16.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
       <img src="https://i.ibb.co/VcnMnSNT/miro.jpg" alt="miro" border="0">
-        <span>PEC Desenvolvimento Curricular-Matemática</span>
+        <span>Desenvolvimento Curricular Matemática</span>
       </div>
       <div class="hex-item" data-name="Kelly Goes dos Santos – Educação Física	
-" data-info="Informações sobre Nome 17.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
        <img src="https://i.ibb.co/mrmtvqFn/kelly.jpg" alt="kelly" border="0">
-        <span>PEC Desenvolvimento Curricular-Educação Física</span>
+        <span>Desenvolvimento Curricular Educação Física</span>
       </div>
       <div class="hex-item" data-name="Marcia Marigo Oliveira 	
-" data-info="Informações sobre Nome 18.">
+" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
       <img src="https://i.ibb.co/YByxpvMH/marcia.jpg" alt="marcia" border="0">
-        <span>PEC Desenvolvimento Curricular-Língua Portuguesa</span>
+        <span>Desenvolvimento Curricular Língua Portuguesa</span>
       </div>
-      <div class="hex-item" data-name="Tiago Jesus Gomes" data-info="Informações sobre Nome 19.">
+      <div class="hex-item" data-name="Tiago Jesus Gomes" data-info="Um PEC Desenvolvimento Curricular é responsável por criar e adaptar materiais pedagógicos, oferecer suporte e treinamento contínuo aos professores, 
+	  monitorar e avaliar a aplicação do currículo nas escolas, propor e implementar novas metodologias pedagógicas e coordenar projetos educacionais. Essas funções garantem que o currículo escolar seja relevante, 
+	  atualizado e eficaz na promoção do aprendizado dos alunos.">
         <img src="https://i.ibb.co/zTkv2jDC/tiago.jpg" alt="tiago" border="0">
-        <span>PEC Desenvolvimento Curricular-Matemática</span>
+        <span>Desenvolvimento Curricular Matemática</span>
       </div>
-      <div class="hex-item" data-name="Nome 20" data-info="Informações sobre Nome 20.">
-        <img src="https://via.placeholder.com/50" alt="Foto">
-        <span>Nome 20</span>
-      </div>
-      <div class="hex-item" data-name="Nome 21" data-info="Informações sobre Nome 21.">
-        <img src="https://via.placeholder.com/50" alt="Foto">
-        <span>Nome 21</span>
-      </div>
+     
     </div>
     <div class="category-description">
       O PEC Desenvolvimento Curricular é fundamental para manter o currículo atualizado, relevante e alinhado às necessidades dos estudantes, contribuindo para a melhoria da qualidade da educação e o cumprimento das metas educacionais.
@@ -339,22 +367,22 @@ Renata Martins Correia
 
   <!-- Categoria: PEC Multiplica -->
   <div class="category pec-multiplica">
-    <h3>PEC Multiplica</h3>
+    <h3>Programa Multiplica SP </h3>
     <div class="hex-grid">
-      <div class="hex-item" data-name="Rosangela Costa - PEC Multiplica 
+      <div class="hex-item" data-name="Rosangela Costa
 
 " data-info="Informações sobre Nome 22.">
        <img src="https://i.ibb.co/LdZdKWjK/rosan.jpg" alt="rosan" border="0">
-        <span>Nome 22</span>
+        <span>PEC Multiplica</span>
       </div>
-      <div class="hex-item" data-name="Renato Jose de Souza  - PEC Multiplica
+      <div class="hex-item" data-name="Renato Jose de Souza
 " data-info="Informações sobre Nome 23.">
        <img src="https://i.ibb.co/FbdDsrJD/renato.jpg" alt="renato" border="0">
-        <span>Nome 23</span>
+        <span>PEC Multiplica</span>
       </div>
     </div>
     <div class="category-description">
-      Esta categoria é voltada para a multiplicação de conhecimentos e expansão do projeto.
+      O PEC Multiplica no programa "Multiplica SP" tem como principais funções promover a formação entre pares, participar de ações formativas, elaborar documentações pedagógicas, mediar atividades de formação continuada, orientar e acompanhar Professores Multiplicadores, responder dúvidas pedagógicas, acompanhar frequência e avaliação, registrar atividades na plataforma virtual, realizar ações de engajamento, atender solicitações do PEC Multiplica, comunicar problemas, substituir professores quando necessário e monitorar horas-aulas na plataforma oficial da SEDUC SP. Essas responsabilidades garantem a eficácia das ações formativas.
     </div>
   </div>
 
