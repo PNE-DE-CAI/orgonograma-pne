@@ -40,19 +40,65 @@
       justify-content: center;
     }
 
-    .hex-item {
-      position: relative;
-      width: 150px;
-      height: 163px;
-      background-color: #333;
-      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      cursor: pointer;
-      transition: transform 0.2s, background-color 0.2s;
+  Para posicionar o elemento `.link-pastas` ao lado direito do elemento `.hex-item`, você pode usar a propriedade `float` ou `flexbox`. Vou mostrar como fazer isso usando ambas as abordagens.
+
+### Usando `float`:
+Adicione a propriedade `float: right;` ao elemento `.link-pastas` e ajuste o `margin-left` conforme necessário:
+
+```css
+.link-pastas {
+    display: inline-block;
+    margin-left: 10px; /* Ajuste conforme necessário */
+    color: #fff; 
+    text-decoration: underline;
+    cursor: pointer;
+    float: right;
+}
+```
+
+### Usando `flexbox`:
+Envolva ambos os elementos em um contêiner flexível e use a propriedade `justify-content` para alinhar os itens:
+
+```html
+<div class="container">
+    <div class="hex-item">
+        <!-- Conteúdo do hex-item -->
+    </div>
+    <div class="link-pastas">
+        <!-- Conteúdo do link-pastas -->
+    </div>
+</div>
+
+.container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+}
+
+.hex-item {
+    position: relative;
+    width: 150px;
+    height: 163px;
+    background-color: #333;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.link-pastas {
+    display: inline-block;
+    margin-left: 10px; /* Ajuste conforme necessário */
+    color: #fff; 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
     }
 
     .hex-item:hover {
@@ -156,13 +202,7 @@
       z-index: 999;
     }
 	  /* Estilo do link PASTAS */
-    .link-pastas {
-      display: inline-block;
-      margin-left: -150px;
-      color: #fff;
-      text-decoration: underline;
-      cursor: pointer;
-    }
+
   </style>
 </head>
 <body>
