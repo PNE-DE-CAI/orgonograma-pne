@@ -40,12 +40,7 @@
       justify-content: center;
     }
 
-  Para posicionar o elemento `.link-pastas` ao lado direito do elemento `.hex-item`, você pode usar a propriedade `float` ou `flexbox`. Vou mostrar como fazer isso usando ambas as abordagens.
 
-### Usando `float`:
-Adicione a propriedade `float: right;` ao elemento `.link-pastas` e ajuste o `margin-left` conforme necessário:
-
-```css
 .link-pastas {
     display: inline-block;
     margin-left: 10px; /* Ajuste conforme necessário */
@@ -54,12 +49,7 @@ Adicione a propriedade `float: right;` ao elemento `.link-pastas` e ajuste o `ma
     cursor: pointer;
     float: right;
 }
-```
 
-### Usando `flexbox`:
-Envolva ambos os elementos em um contêiner flexível e use a propriedade `justify-content` para alinhar os itens:
-
-```html
 <div class="container">
     <div class="hex-item">
         <!-- Conteúdo do hex-item -->
@@ -139,7 +129,7 @@ Envolva ambos os elementos em um contêiner flexível e use a propriedade `justi
       background-color: #1E90FF; /* Azul */
     }
  .pec-conviva .hex-item {
-      background-color:   #FFA500; /* AMARELO */
+      background-color:   #800080; /* AMARELO */
     }
 	  
     /* Caixa de descrição da categoria */
