@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Acompanhadas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      color: #1E90FF;
+      margin-bottom: 20px;
+    }
+
+    .hex-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px); /* 3 colunas de hexágonos */
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .hex-item {
+      width: 100px;
+      height: 115px;
+      background-color: orange;
+      clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      font-size: 0.8em;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .hex-item:hover {
+      transform: scale(1.1);
+      background-color: #0077cc;
+    }
+
+    .btn-voltar {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #1E90FF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn-voltar:hover {
+      background-color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <h2>ESCOLAS</h2>
+
+  <!-- Grid de Hexágonos -->
+  <div class="hex-grid">
+    <div class="hex-item">ANA MARIA GARRIDO ORLANDIN PROFA </div>
+    <div class="hex-item">
+      SUZANA DIAS
+      </div>
+    <div class="hex-item">ELCIO JOSE PEREIRA COTRIM PROF  </div>
+    <div class="hex-item">
+      WALTER RIBAS DE ANDRADE PROF EE</div>
+    <div class="hex-item">
+      JOAQUIM MARQUES DA SILVA SOBRINHO TTE</div>
+  </div>
+
+  <!-- Botão de Voltar -->
+  <button class="btn-voltar" onclick="voltar()">Voltar</button>
+
+  <script>
+    // Função para voltar à página anterior
+    function voltar() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
